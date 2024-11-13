@@ -12,6 +12,7 @@ def _fetch_package_index(rctx, url, dist, comp, arch, integrity):
     supported_extensions = {
         "xz": ["xz", "--decompress", "--keep", "--force"],
         "gz": ["gzip", "--decompress", "--keep", "--force"],
+        "bz2": ["bzip2", "--decompress", "--keep", "--force"],
     }
 
     failed_attempts = []
